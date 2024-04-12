@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+
+/* Global Style 전체 선택자 */
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    font-size: 16px;
+    background-color: black;
+}
+
+body{
+    font-family: "Pretendard";
+}
+
+
+/* header */
+
+header{
+    position: fixed;
+    top:0;
+    padding: 32px; 
+    width: 100%;
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+}
+
+.header__logo img{
+    width: 60px;
+    height: 60px;
+}
+
+.header__logo h1{
+    font-size: 2rem;
+    color: white;
+}
+
+.header__logo h1 span{
+    color:#C41E3A;
+}
+
+ul.header__Link{ 
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.header__Link li{
+    list-style: none;
+}
+
+ul.header__Link li a{ 
+    color: white;
+}
+
+
+/* home */
+
+section#home .home__profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+section#home .home__profile img{
+    margin-top: 200px;
+    width: 80%;
+}
+
+section#home .home__profile h2{
+    color: white;
+    font-size: 2rem;
+}
+
+section#home .home__description{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#home .home__description h3{
+    color: white;
+    line-height: 150%;
+}
+
+
+
+/*about*/
+
+.about__activity__container{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+}
+
+.about__activity__container .about__activity{
+    width:30%;
+}
+
+.about__activity__container .about__activity img{
+    width: 100%;
+    border-radius: 100%;
+    margin-top: 30px;
+}
+
+.about__activity__container .about__activity h2{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about__activity__container .about__activity h3{
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+
+/* contact */
+
+.contact__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.contact__button h2{
+    color: white;
+    background-color: #ff7710;
+    font-size: 2rem;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+
+
+/* media query */
+
+@media screen and (max-width: 1300px) {
+    html {
+      font-size: 12px;
+    }
+}
+  
+  @media screen and (max-width: 768px) {
+    .about__activity__container {
+      flex-direction: column;
+      align-items: center;
+    }
+}

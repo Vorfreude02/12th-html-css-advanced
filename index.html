@@ -3,16 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./imgs/likelion_logo.svg" />
+    <title>LIKELION SOGANG</title>
   </head>
   <body>
     <!-- Header -->
+    <header id="header">
+      <nav id="header__nav">
+        <a href="./index.html">
+          <div class="header__logo">
+            <img
+              src="./imgs/likelion_logo.svg"
+              alt="logo"
+              id="header__logo__img"
+            />
+            <h1>LIKELION <span id="span__red">SOGANG</span></h1>
+          </div>
+        </a>
 
+        <ul class="header__Link">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
     <!-- Navbar -->
 
     <!-- Home -->
+    <section id="home">
+      <div class="home__profile">
+        <img
+          src="./imgs/likelion_white_logo.svg"
+          alt="logo_white"
+          id="home__logo__img"
+        />
+        <h2>POSSIBILITY TO REALITY</h2>
+      </div>
+      <div class="home__description">
+        <h3>꿈꾸는 자들에게 가능성을</h3>
+        <h3>현실로 구현하기 위한 도구를 제공합니다.</h3>
+      </div>
+    </section>
 
     <!-- About -->
+    <section id="about">
+      <div class="about__activity__container">
+        <div class="about__activity">
+          <div class="about__activity__img">
+            <img src="./imgs/OT.jpg" />
+          </div>
+          <h2 class="about__activity__tile">매주 Lion Sprint 진행</h2>
+          <h3 class="about__activity__subtitle">
+            중앙 멋쟁이사자처럼에서 제공하는 체계적인 강의와 멋쟁이사자처럼
+            서강대학교 운영진만의 심화 세션을 통해 웹 서비스에 대한 이해도를
+            높입니다.
+          </h3>
+        </div>
+        <div class="about__activity">
+          <div class="about__activity__img">
+            <img src="./imgs/project.jpg" />
+          </div>
+          <h2 class="about__activity__tile">실제 서비스 개발</h2>
+          <h3 class="about__activity__subtitle">
+            웹 서비스 지식을 기반으로 실제 웹서비스를 제작합니다. 멋쟁이사자처럼
+            서강대학교에서는 전통적으로 서강대학교 축제 웹사이트를
+            제작해왔습니다.
+          </h3>
+        </div>
+        <div class="about__activity">
+          <div class="about__activity__img">
+            <img src="./imgs/hackathon.jpg" />
+          </div>
+          <h2 class="about__activity__tile">전국 규모 해커톤 참가</h2>
+          <h3 class="about__activity__subtitle">
+            프론트와 백엔드로 팀을 꾸려서 중앙 멋쟁이사자처럼과 신촌 대학교
+            멋쟁이사자처럼의 해커톤에 참여합니다.
+          </h3>
+        </div>
+      </div>
+    </section>
 
     <!-- contact -->
+    <section id="contact">
+      <div class="contact__button">
+        <a href="https://www.instagram.com/likelion_sg" target="_blank">
+          <h2 id="contact__title">CONTACT US !</h2>
+        </a>
+      </div>
+    </section>
   </body>
 </html>
